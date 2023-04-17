@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./page/style/style.css">
+</head>
+
+ <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">NOTWORKING</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./page/comunidad.html">Comunidad</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Documentacion
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../page/redes.html">Notas Redes</a></li>
+                  <li><a class="dropdown-item" href="../page/seguridad.html">Seguridad</a></li>
+                  <li><a class="dropdown-item" href="../page/AWS.html">AWS</a></li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../page/templates.html">Templates</a></li>
+                  <li><a class="dropdown-item" href="../page/codigo.html">Codigo</a></li>
+
+                </ul>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+ </header>
+
+
+
+
+
+
+ <body>
+    <main>
+<!-- CARDS de documentacion. ultimos post.-->
+ <!--fixed-top-->
+<div class=" row ">
+    
+    <div class="col-4">
+      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end ">
+        <nav class="nav nav-pills flex-column ">
+          <a class="nav-link" href="#item-1">Item 1. MODELO JERÁRQUICO</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1 Nivel de Acceso </a>
+            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2 Nivel de Distribuicion </a>
+            <a class="nav-link ms-3 my-1" href="#item-1-3">Item 1-3 Nivel de Nucleo </a>
+            <a class="nav-link ms-3 my-1" href="#item-1-3">Item 1-4 Resumen de Modelo </a>
+            <a class="nav-link ms-3 my-1" href="#item-1-4">Item 1-5 Troubleshooting </a>
+          </nav>
+          <a class="nav-link" href="#item-2">Direccionamiento IP</a>
+          <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-2-1">Item 2-1 Tipos de direcciones </a>
+          </nav>
+          <a class="nav-link" href="#item-3">Item 3</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+          </nav>
+        </nav>
+      </nav>
+    </div>
+  
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <div id="item-1">
+          <h4>MODELO JERÁRQUICO</h4>
+          <p>Un modelo jerárquico acelera la
+            convergencia, mantiene posibles problemas aislados por capas y reduce la
+            sobrecarga en los dispositivos.
+            El modelo se compone de tres capas o niveles:
+            Capa o nivel de acceso.
+            Capa o nivel de distribución.
+            Capa o nivel de núcleo </p>
+            <img src="../img/img004.PNG">
+        </div>
+        <div id="item-1-1 c">
+          
+          <h5>Capa o nivel de acceso.</h5>
+          
+          <p>Algunas de las funciones de la capa de acceso son:
+            Interconexión de los diferentes grupos de trabajo hacia la capa de
+            distribución.
+            Segmentación en múltiples dominios de colisión.
+            Brinda soporte a tecnologías como Ethernet y Wireless.
+            Implementación de redes virtuales (VLAN).</p>
+        </div>
+        <div id="item-1-2">
+          <h5>Capa o nivel de distribución.</h5>
+          <p>Servir como punto de concentración para acceder a los dispositivos de
+            capa de acceso.
+            Enrutar el tráfico para proporcionar acceso a los departamentos o
+            grupos de trabajo y entre las diferentes VLAN.
+            Segmentar la red en múltiples dominios de difusión/multidifusión.
+            Traducir los diálogos entre diferentes tipos de medios, como Token
+            Ring y Ethernet.
+            Proporcionar servicios de seguridad y filtrado</p>
+        </div>
+        <div id="item-1-3">
+            <h5> Capa o nivel de núcleo. </h5>
+            <p>Para la capa de core se deben tomar en cuenta los siguientes conceptos:
+              Esta capa debe ser diseñada para una alta velocidad de transferencia y
+              mínima latencia.
+              No se debe dar soporte a grupos de trabajo ni enrutamiento entre
+              VLAN.
+              El tráfico debe haber sido filtrado en la capa anterior.
+              Los protocolos de enrutamientos utilizados deben ser de rápida
+              convergencia y redundantes</p>
+          </div>
+          <div id="item-1-4">
+            <h5> Resumen Modelo Jerarquico </h5>
+            <img src="../img/img005.PNG" alt="img005">
+            
+          </div>
+          <div id="item-1-4">
+            <h5> Modelo de Core Colapsado  </h5>
+            <p>
+              El dispositivo de núcleo-distribución colapsado debe proporcionar lo
+              siguiente:
+              Rutas físicas y lógicas de alta velocidad de conexión a la red.
+              Servir como punto de demarcación entre acceso y núcleo y de
+              concentración de capa 2.
+              Definir las políticas de acceso y de enrutamiento.
+              Proveer calidad de servicio (QoS), virtualización de red, etc.
+            </p>
+            <p>
+              WAN ---> Core/distribuicion --- > Acceso 
+              <br>
+              Sin embargo, si se espera que la empresa crezca con el tiempo, la
+              implementación del modelo jerárquico de tres niveles es la mejor opción.
+            </p>
+          </div>
+          <div id="item-1-5">
+            <h5>Troubleshooting</h5> 
+            <p>Procedimientos para obtener resultados positivos en solucionar problemas de redes <br>
+            1. Infromar el problema: primeriza informacion sobre las fallas poco precisa e incluso erronea sobre los dispotivos o red afectada</p>
+            <br>
+            2.Recopilacion de la informacion: identificado donde esta el error, se debe recolectar info de logs, info de historica de cambios si existen redes ya externas con problemas se debe comunicar.
+          <br>
+          3.Examinar la informacion recopilada: Identificar causas que apunten al problema raíz.
+          Eliminar información que sea innecesaria.
+           <br>
+           4.Eliminar causas potenciales    
+        </div>
+
+
+        <div id="item-2" >
+          <h4>Direccionamiento IP</h4>  
+          <p>Se habla de numeros binarios y Numeros hexadecimales  como funcionan<br>
+            Tipos de direcciones IPv4:Dirección de red: la dirección en la que se hace referencia a la red o
+            subred.
+            Dirección de broadcast: una dirección especial que se utiliza para
+            enviar datos a todos los hosts de la red.
+            Direcciones host: las direcciones asignadas a los dispositivos finales
+            de la red.
+          </p>
+          <div id="item-2-1 c">
+          
+            <h5>Tipos de direccionamiento.</h5>
+            
+            <p>Algunas de las funciones de la capa de acceso son:
+              Interconexión de los diferentes grupos de trabajo hacia la capa de
+              distribución.
+              Segmentación en múltiples dominios de colisión.
+              Brinda soporte a tecnologías como Ethernet y Wireless.
+              Implementación de redes virtuales (VLAN).</p>
+          </div>
+          
+        </div>
+
+        <div id="item-3">
+          <h4>Item 3</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+
+            Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible. Multiple visible scrollspy targets at the same time may cause some issues.</p>
+        </div>
+        <div id="item-3-1">
+          <h5>Item 3-1</h5>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+
+            Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible. Multiple visible scrollspy targets at the same time may cause some issues..</p>
+        </div>
+        <div id="item-3-2">
+          <h5>Item 3-2</h5>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+
+            Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible. Multiple visible scrollspy targets at the same time may cause some issues.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </main>
+
+
+
+    <footer>
+      <div class="card mb-3">
+          <img src="./img/img002.jpg" class="card-img-top" alt="imgfooter">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+
+          <p class="float-end mb-1">
+              <a href="#">Back to top</a>
+            </p>
+
+        </div>
+  </footer>
+
+
+ </body>
+
+
+      
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</html>
